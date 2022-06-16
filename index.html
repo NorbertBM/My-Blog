@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- todo: Font Awesome CDN -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- todo: Link CSS File -->
+    <link
+      rel="stylesheet"
+      href="/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/style.css"
+    />
+    <title>My Blog</title>
+  </head>
+
+  <style>
+    /* todo: move nav to CSS */
+    /* nav {
+      text-align: center;
+      margin-top: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav ul a {
+      text-decoration: none;
+    }
+    nav ul a li {
+      color: black;
+    } */
+
+    /* section {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+    } */
+    /* Move later to CSS */
+    footer nav {
+      max-width: 500px;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <!-- TODO: HTML Elements ID and there CSS selection  -->
+        <nav id="mainNav">
+          <ul>
+            <!-- TODO: HTML Elements Classes and there CSS selection -->
+            <a href="index.html"> <li class="nav-item active">Home</li> </a>
+
+            <a href="./Pages/blog.html"> <li class="nav-item">Blog</li> </a>
+
+            <a href="./Pages/about.html"> <li class="nav-item">About</li> </a>
+            <a href="./Pages/contact.html"><li class="nav-item">Contact</li></a>
+          </ul>
+        </nav>
+        <h1>Jane Doe</h1>
+        <hr style="height: 2px; background-color: black; margin-bottom: 36px" />
+        <section id="About">
+          <img
+            src="/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/profileImg.jpg"
+            alt="my profile img"
+            style="width: 400px"
+          />
+          <div class="img-description">
+            <!-- TODO : CSS Colors -->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In est
+              consequuntur iste distinctio natus mollitia! Iusto aliquid nemo
+              laudantium, maiores, sapiente illo laboriosam perferendis
+              obcaecati alias repellat, cum itaque optio.
+            </p>
+            <button class="btn" onclick="console.log('click')">
+              <!-- 1047-Responsive About Page -->
+              <a href="./Pages/about.html">Read more...</a>
+            </button>
+          </div>
+        </section>
+      </header>
+      <main>
+        <section id="RecentPost">
+          <h2 class="subtitle">Recent Posts</h2>
+          <h3 class="subtitle">Check out my latest post and travel vlogs</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+            id tempore officia magni, eaque quam sapiente consequatur veniam
+            aspernatur vel explicabo minima quaerat, dolores vero, odit aliquam
+            laborum corrupti magnam.
+          </p>
+          <!-- TODO:1026-CSS Borders -->
+          <div class="posts">
+            <article class="post">
+              <!-- <img
+      src="/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/blogPos-1.jpg"
+      alt="post img"
+      style="width: 320px"
+    /> -->
+              <!--TODO:  CSS background-image -->
+              <div class="post-img-1"></div>
+              <h4>Lorem ipsum dolor sit.</h4>
+            </article>
+            <article class="post">
+              <!-- <img
+                src="/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/blogPos-2.jpg"
+                alt="post img"
+                style="width: 320px"
+              /> -->
+              <!-- TODO: 1044-CSS 2D Transforms.md  -->
+              <div class="post-img-2"></div>
+              <h4>Lorem ipsum dolor sit.</h4>
+            </article>
+            <article class="post">
+              <!-- <img
+                src="/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/blogPos-3.jpg"
+                alt="post img"
+                style="width: 320px"
+              /> -->
+              <!-- TODO: 1044-CSS 2D Transforms.md  -->
+              <div class="post-img-3"></div>
+
+              <h4>Lorem ipsum dolor sit.</h4>
+            </article>
+          </div>
+        </section>
+        <section id="Podcast">
+          <h2 class="subtitle">My Podcast</h2>
+          <!-- <audio controls autoplay="false">
+            <source
+              src="/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/audio/piano.wav"
+              type="audio/mpeg"
+            />
+    
+          </audio> -->
+          <article class="podcast-container">
+            <div class="podcast">
+              <iframe
+                allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                frameborder="0"
+                height="450"
+                style="
+                  width: 100%;
+                  max-width: 660px;
+                  overflow: hidden;
+                  background: transparent;
+                "
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                src="https://embed.podcasts.apple.com/de/podcast/weekly-code-quickies-with-norbert-b-m/id1455776215"
+              ></iframe>
+            </div>
+            <div class="podcast-description">
+              <h2>Weekly code quickies with Norbert B.M.</h2>
+              <h6>By Menyhart B. Norbert</h6>
+              <p>
+                Welcome to Menyhart B. Norbert's WCQ Podcast. This Podcast is
+                dedicated your weekly updates for Tech news, Coding tricks and
+                tips, React Angular Vue and more. I am your Host NorbertBM and
+                this episode we will ….
+              </p>
+            </div>
+            <ul class="podcast-episodes">
+              <li>
+                <h3>Last episode</h3>
+                <iframe
+                  src="https://anchor.fm/menyhart-b-norbert9/embed/episodes/React-version-18--What-is-new-in-React-v18--How-to-Install-Update-and-run-React-JS-v18-e1h1hmp"
+                  height="102px"
+                  width="400px"
+                  frameborder="0"
+                  scrolling="no"
+                  title="My podcast"
+                ></iframe>
+              </li>
+              <li>
+                <h3>Most shared</h3>
+                <iframe
+                  src="https://anchor.fm/menyhart-b-norbert9/embed/episodes/Top-10-Skills-You-Must-Know-2022-Before-You-Learn-ReactJS-e1e751u/a-a7cmpjs"
+                  height="102px"
+                  width="400px"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+    <!-- TODO: HTML Elements ID and there CSS selection  -->
+    <footer>
+      <!-- Style the footer nav -->
+      <nav id="footerNav">
+        <ul>
+          <a href="index.html"> <li>Home</li> </a>
+          <li>-</li>
+          <a href="./Pages/blog.html"> <li>Blog</li> </a>
+          <li>-</li>
+          <a href="./Pages/abot.html"> <li>About</li> </a>
+          <li>-</li>
+          <a href="./Pages/contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <!-- TODO: Symbols and Icons -->
+      <nav id="socialNav">
+        <ul>
+          <!-- TODO:1039-Navigate between web pages -->
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.youtube.com/c/MenyhartMedia" target="_blank"
+            ><i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://pinterest.com" target="_blank"
+            ><i class="fa-brands fa-pinterest"></i>
+          </a>
+        </ul>
+      </nav>
+      <p>
+        &copy; 2023
+        <a href="https://norbertbm.com" target="_blank">Menyhart Media</a>
+      </p>
+    </footer>
+    <!-- <script>
+      function myFunction() {
+        console.log("click");
+      }
+    </script> -->
+    <script src="main.js"></script>
+  </body>
+</html>

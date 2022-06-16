@@ -1,0 +1,66 @@
+/* TODO: 1048 Responsive Blog Page and Post */
+.post :hover::after {
+  content: "";
+}
+
+.posts {
+  /* reverse revers :) */
+  flex-direction: row;
+}
+.post {
+  height: auto;
+  cursor: pointer;
+}
+
+.post h4 {
+  padding: 0;
+  margin: 16px;
+}
+
+.post p {
+  margin: 16px;
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  font-size: 12px;
+  font-weight: 100;
+}
+.post > div {
+  height: 213px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right top;
+  background-position: center;
+  width: 320px;
+  transition: 0.3s ease;
+}
+.post > div:hover {
+  cursor: pointer;
+  background-size: 110%;
+  transition: 0.3s ease;
+}
+
+.post-img-4 {
+  background-image: url("/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/blogPos-4.jpg");
+}
+.post-img-5 {
+  background-image: url("/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/blogPos-5.jpg");
+}
+.post-img-6 {
+  background-image: url("/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/blogPos-6.jpg");
+}
+@media screen and (min-width: 1000px) {
+  /* body {
+    background-color: red;
+  } */
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .post,
+  .post > div {
+    width: 250px;
+  }
+}
