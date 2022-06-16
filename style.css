@@ -109,7 +109,7 @@ footer {
 }
 
 .post-img-1 {
-  background-image: url("/img/blogPos-1.jpg");
+  background-image: url("./img/blogPos-1.jpg");
   height: 213px;
   background-size: 100px;
   background-repeat: no-repeat;
@@ -519,7 +519,7 @@ h1 {
   transition: 0.3s ease;
 }
 .post-img-2 {
-  background-image: url("/img/blogPos-2.jpg");
+  background-image: url("./img/blogPos-2.jpg");
   height: 213px;
   background-size: 100px;
   background-repeat: no-repeat;
@@ -529,7 +529,7 @@ h1 {
   width: 320px;
 }
 .post-img-3 {
-  background-image: url("/img/blogPos-3.jpg");
+  background-image: url("./img/blogPos-3.jpg");
   height: 213px;
   background-size: 100px;
   background-repeat: no-repeat;
@@ -576,7 +576,7 @@ h1 {
     display: none;
   }
   .img-description {
-    background: url(/img/profileImg.jpg)
+    background: url(./img/profileImg.jpg)
       no-repeat center;
     background-size: 100%;
   }
