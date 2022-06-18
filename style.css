@@ -111,7 +111,7 @@ footer {
 }
 
 .post-img-1 {
-  background-image: url("/advanced-html-css-build&deploy-website/01-HTML-CSS-Basics-Build-a-Blog-Website/MyBlog/img/blogPos-1.jpg");
+  background-image: url("./img/blogPos-1.jpg");
   height: 213px;
   background-size: 100px;
   background-repeat: no-repeat;
